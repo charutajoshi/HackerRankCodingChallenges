@@ -61,8 +61,6 @@ namespace ConsoleApp1
 
         public static void CallFlippingBits()
         {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
             int q = Convert.ToInt32(Console.ReadLine().Trim());
 
             for (int qItr = 0; qItr < q; qItr++)
@@ -71,11 +69,8 @@ namespace ConsoleApp1
 
                 long result = FlippingBits.flippingBits(n);
 
-                textWriter.WriteLine(result);
+                Console.WriteLine(result);
             }
-
-            textWriter.Flush();
-            textWriter.Close();
         }
     }
 }
