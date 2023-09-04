@@ -11,14 +11,14 @@ namespace ConsoleApp1.HackerRank_Challenges
     /// </summary>
     public class FlippingBits
     {
-        public static long flippingBits(long n)
+        public static long flippingBits(Int32 n)
         {
             var nBinary = Convert.ToString(n, 2);
             char[] chars = nBinary.ToCharArray();
 
             for (int i=0; i<chars.Length; i++)
             {
-                if (i == '0')
+                if (chars[i] == '0')
                 {
                     chars[i] = '1';
                 }

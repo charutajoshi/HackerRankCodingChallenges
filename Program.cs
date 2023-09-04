@@ -19,7 +19,7 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            CallFlippingBits(); 
+            CallDiagonalDifference(); 
         }
 
         public static void CallSparseArrays()
@@ -65,12 +65,29 @@ namespace ConsoleApp1
 
             for (int qItr = 0; qItr < q; qItr++)
             {
-                long n = Convert.ToInt64(Console.ReadLine().Trim());
+                var n = Convert.ToInt32(Console.ReadLine().Trim());
 
-                long result = FlippingBits.flippingBits(n);
+                var result = FlippingBits.flippingBits(n);
 
                 Console.WriteLine(result);
             }
+        }
+
+        public static void CallDiagonalDifference()
+        {
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+            List<List<int>> arr = new List<List<int>>();
+
+            for (int i = 0; i < n; i++)
+            {
+                arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+            }
+
+            int result = DiagonalDifference.GetDiagonalDifference(arr);
+
+            Console.WriteLine(result);
+
         }
     }
 }
