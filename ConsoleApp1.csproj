@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="BankingApp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BankingApp\" />
+  </ItemGroup>
 </Project>
