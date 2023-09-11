@@ -1,20 +1,25 @@
 ﻿<Properties StartupConfiguration="{E712052B-A1A4-4DE1-8A93-912AC875F0E0}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/charutajoshi/Desktop/HackerRankCodingChallenges/HackerRank Challenges/FlippingBits.cs" relfile="HackerRank Challenges/FlippingBits.cs" line="32" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="HackerRank Challenges/SortArray.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="HackerRank Challenges/SortArray.cs" Line="21" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsoleApp1">
             <Node name="ConsoleApp1">
-              <Node name="BankingApp" expanded="True" />
-              <Node name="HackerRank Challenges" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="HackerRank Challenges" expanded="True">
+                <Node name="SortArray.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -22,5 +27,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ConsoleApp1 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

@@ -19,7 +19,7 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            CallDiagonalDifference(); 
+            CallCountingSort(); 
         }
 
         public static void CallSparseArrays()
@@ -88,6 +88,17 @@ namespace ConsoleApp1
 
             Console.WriteLine(result);
 
+        }
+
+        public static void CallCountingSort()
+        {
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+
+            List<int> result = CountingSort.Sort(arr);
+
+            Console.WriteLine(String.Join(" ", result));
         }
     }
 }
