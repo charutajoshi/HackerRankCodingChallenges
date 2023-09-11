@@ -35,13 +35,25 @@ namespace ConsoleApp1.BankingApp
 
 		public void Deposit(string acctID, DateTime time, double amount)
 		{
-
+			foreach (var acct in accounts)
+			{
+				if (acct.ID == acctID)
+				{
+					acct.Amount += amount; 
+				}
+			}
 		}
 
 		public void Payment(string acctID, DateTime time, double amount)
 		{
-
-		}
+            foreach (var acct in accounts)
+            {
+                if (acct.ID == acctID)
+                {
+                    acct.Amount = acct.Amount - amount;
+                }
+            }
+        }
 	}
 }
 
